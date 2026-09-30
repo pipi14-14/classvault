@@ -1,0 +1,17 @@
+CLASSVAULT PROJECT — EXTERNAL INTEGRATIONS SPECIFICATION
+
+Plan integrations for the ClassVault college study hub. Treat each external system as optional and describe setup dependencies. Never fabricate API access or availability.
+
+1. WhatsApp sharing
+Use a user-initiated flow: share a file/link/message excerpt into ClassVault using the platform share action or a copy/paste/upload flow. Do not silently read private groups or promise automatic group ingestion. Clearly explain what content the student is submitting.
+
+2. YouTube
+Support pasted YouTube URLs immediately. If live discovery is desired, use an authorized official API where feasible, keep credentials on the server, respect quotas and platform terms, link to original videos, and label recommendations as external. Explain relevance to a course/topic. Do not copy video content. Allow teacher-reviewed recommendations and timestamped student notes.
+
+3. College library catalogue
+Prefer the college library's authorized API, discovery service, or scheduled catalogue export. Map book records and individual holdings/copies separately where possible. Show a last-updated timestamp and distinguish available, checked out, reference-only, and unknown status. Include location/call number and expected return only when supplied by the source. If there is no integration, provide a staff-maintained import/admin workflow and label data freshness clearly.
+
+4. Notifications
+Design opt-in notifications for saved books becoming available and study reminders. Select a channel only after the institution's consent, delivery service, and privacy requirements are known. Provide unsubscribe and notification preference controls.
+
+For every integration document: source of data, authorization/credentials, data fields, refresh behavior, failure/empty states, privacy implications, rate limits or operational constraints, and a mock/demo fallback. Keep secrets out of browser code. Clearly mark sample data as sample data.

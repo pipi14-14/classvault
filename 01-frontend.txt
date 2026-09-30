@@ -1,0 +1,35 @@
+CLASSVAULT PROJECT — FRONTEND SPECIFICATION
+
+Build the frontend for ClassVault, a college study hub that helps students find materials shared across multiple WhatsApp groups. This is a practical college project website, not just a static landing page.
+
+Users and roles
+- Student: saves materials, searches resources, explores topics, asks questions, and checks library books.
+- Teacher: manages materials in assigned classes, connects topics, recommends learning resources, and answers student questions.
+- Library staff: maintains book catalogue and availability data if no live catalogue API exists.
+
+Required screens
+1. Home/landing page with a clear pitch, search entry point, and sign-in or demo entry.
+2. Student dashboard with courses, recent resources, saved items, study reminders, and quick actions.
+3. Search results with filters for course, subject, topic, material type, and date.
+4. Topic page combining class documents, teacher explanations, discussion, practice, and related YouTube videos.
+5. Resource detail view for PDFs, links, images, and videos, including annotations and discussion.
+6. Teacher dashboard for class resources, topic collections, student questions, and usage summaries.
+7. College library search and book detail views showing availability and shelf/location information.
+
+Interactions
+- Search by title, topic, phrases, and natural-language queries.
+- Add/upload a resource or paste a URL; show suggested course/topic tags for user confirmation.
+- Save/bookmark resources, add personal notes, highlight passages, and create timestamped video notes.
+- Ask a question on a topic or a specific resource; teachers can reply in a class discussion.
+- Browse related YouTube videos, clearly labeled as external recommendations.
+- Search books by title, author, ISBN, subject, or course topic; save a book and request an availability notification.
+- Provide useful loading, empty, error, and success states. Make forms and controls keyboard accessible.
+
+Design direction
+Create a polished, welcoming academic interface that feels organized and calm. Use clear hierarchy, readable typography, responsive layouts, and consistent components. Make student, teacher, and library staff contexts clear. Include realistic sample content. Avoid clutter and avoid suggesting that a demo role switch provides real security.
+
+Technical guidance
+Use the repository's existing framework and conventions where present. Keep components modular, use typed data models, and keep API access behind a service layer so sample data can later be replaced by backend endpoints. Do not put secrets in frontend code. If implementing a prototype, state clearly which interactions use mock/local data.
+
+Deliverables
+Implement the frontend, explain how to run it, list the screens and interactions completed, and identify any backend-dependent behavior that remains mocked. Do not claim to have built a real WhatsApp import, live YouTube search, authentication, or library catalogue connection unless the code actually integrates it.

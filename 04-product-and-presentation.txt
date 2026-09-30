@@ -1,0 +1,32 @@
+CLASSVAULT PROJECT — PRESENTATION AND PRODUCT BRIEF
+
+Problem
+Students receive notes, PDFs, links, videos, and other study materials across multiple WhatsApp groups and struggle to find them later. They also need related learning resources, teacher guidance across topics, and a way to check which books are available in the college library.
+
+Product concept
+ClassVault is an interactive study hub that organizes class materials by course and topic, connects resources to teacher guidance and related YouTube videos, and lets students search the college library catalogue.
+
+Audience
+- Students who need to save, understand, and retrieve study materials.
+- Teachers who manage assigned class resources and help students across multiple topics.
+- Library staff who maintain catalogue and availability information when integration is unavailable.
+
+Create a presentation-ready concept containing
+1. A concise pitch and value proposition.
+2. User needs and a clear explanation of the problem.
+3. Student, teacher, and library workflows.
+4. Sitemap and page-by-page purpose.
+5. A demonstration journey: student saves a worksheet shared in WhatsApp, finds related notes and a YouTube explanation, asks about a step, receives a teacher response, then checks a recommended book's library status and location.
+6. Example interface copy, sample content, and interaction details.
+7. MVP versus later features.
+8. Privacy, access control, accessibility, catalogue freshness, and integration dependencies.
+9. A short spoken demo script and suggested slide outline.
+
+Product boundaries
+- Teachers have access to documents in their assigned class workspace, subject to clear institutional permissions.
+- Students' personal notes are private unless they choose to share them.
+- WhatsApp material is submitted by the student; the product does not silently ingest private group chats.
+- YouTube recommendations link to external videos and are labeled as such.
+- Library availability is only live if connected to an authorized current catalogue feed; otherwise label the source and update time.
+
+Use clear, student-friendly language. Make the concept cohesive and realistic. Do not claim the idea is entirely unprecedented or imply integrations exist when they are only proposed.

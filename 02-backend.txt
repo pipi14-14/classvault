@@ -1,0 +1,33 @@
+CLASSVAULT PROJECT — BACKEND SPECIFICATION
+
+Design and implement a backend/API for ClassVault, a college study hub. Students save class notes, PDFs, links, and videos; organize them by course and topic; ask questions; and search the college library catalogue. Teachers manage resources in their assigned class workspaces and help students across topics.
+
+Core entities (adapt as needed)
+- User and role; Course/Class and membership; Subject and Topic.
+- Resource with title, description, type, URL or storage reference, uploader, class/course, topic tags, timestamps, visibility, and version relationships.
+- Personal annotation/bookmark; shared discussion thread, question, and reply.
+- Video recommendation and timestamped note.
+- Book catalogue record, copy/holding, library location, availability, and optional notification subscription.
+
+API capabilities
+- Authentication/session endpoints and role-aware authorization.
+- CRUD for classes, memberships, topics, and resources.
+- Resource upload metadata plus safe file-storage flow; link submission and duplicate/version handling.
+- Search across resource metadata and extracted text where available.
+- Personal notes/bookmarks that remain private unless explicitly shared.
+- Class discussion and teacher replies, with permissions limited to class membership and assigned teachers.
+- Catalogue search and book availability endpoints; notification subscription for saved/unavailable books.
+- Teacher summaries such as questions by topic and resource usage, with access limited to assigned classes.
+
+Security and privacy requirements
+- Enforce permissions on the server for every protected request. A frontend role selector is never authorization.
+- Students may access only classes they belong to; teachers may manage only assigned classes; library staff may update catalogue data only when granted that role.
+- Keep personal notes private by default. Make shared visibility explicit.
+- Validate inputs and uploads, restrict file types and sizes, store secrets server-side, and use secure authentication/session practices.
+- Minimize personal data, define retention/deletion behavior, and record meaningful administrative changes.
+- Do not silently scrape or import private WhatsApp group messages. Support user-initiated sharing/upload only unless an authorized official integration is established.
+
+Implementation guidance
+First inspect the existing repository, framework, and instructions. Fit the API to the existing project. If no backend exists, propose a modest architecture and implement a coherent MVP rather than inventing unsupported external credentials. Use environment variables for secrets and document required configuration. Provide migrations/schema, endpoint documentation, and seed/sample data where appropriate.
+
+Be explicit about what is implemented versus proposed. Do not claim production security, live notifications, or external integrations without working, verifiable implementations.
